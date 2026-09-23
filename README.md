@@ -12,6 +12,7 @@
 | `zoomeyesmcp/` | ZoomEye 資產搜尋 |
 | `fofa-mcp/` | FOFA 資產搜尋 |
 | `phpmcp/` | PHP-CGI 參數注入（CVE-2024-4577 / 8926）利用 |
+| `非AI工具包/` | 非 AI 工具包（ZoomEye 搜尋 / `.git` 外洩 / 路徑掃描） |
 
 ---
 
@@ -44,6 +45,17 @@ http.body!="301" && http.header="Apache" && http.header="PHP/8" && after="2026-0
 ```
 
 > 破甲（WAF bypass / 利用）請自行準備，或是自建 AGENT。
+
+---
+
+## 非 AI 工具包（`非AI工具包/`）
+
+傳統腳本（不經 MCP），對應上方 MCP 功能：
+
+- `zoomeye.py` — ZoomEye 搜尋，輸出 ip/port/domain JSON
+- `git.py` / `網域git.py` — 批次檢查 `.git/HEAD` 外洩
+- `多重掃描.py` — 常見漏洞路徑掃描（`.git` / `.env` / config / backup / admin）
+- `7000自己收集的IP表.json` — 自收集目標 IP 清單
 
 ---
 
