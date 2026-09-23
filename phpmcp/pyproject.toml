@@ -1,0 +1,12 @@
+[project]
+name = "phpmcp"
+version = "0.1.0"
+description = "PHP-CGI parameter injection (CVE-2024-4577/8926) MCP server"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31.0",
+    "mcp>=1.0.0,<2",
+]
+
+[tool.uv]
+package = false

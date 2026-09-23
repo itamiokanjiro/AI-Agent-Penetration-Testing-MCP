@@ -1,0 +1,47 @@
+{
+  "name": "fofa-mcp",
+  "version": "0.6.2",
+  "description": "FOFA 搜索引擎 MCP 工具服务器，让 AI 助手直接调用 FOFA API 进行网络资产搜索",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "fofa-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "fofa",
+    "mcp",
+    "model-context-protocol",
+    "security",
+    "asset-discovery",
+    "cybersecurity"
+  ],
+  "author": "lulaide",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lulaide/fofa-mcp.git"
+  },
+  "homepage": "https://github.com/lulaide/fofa-mcp",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "jose": "^6.2.2",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.5.0",
+    "typescript": "^6.0.2"
+  }
+}
