@@ -88,5 +88,12 @@ cd phpmcp; uv sync; uv run server.py
 
 > `cwd` 依實際本機路徑調整。
 
+---
+
+## 來源 / 致謝
+
+- `phpmcp/`（PHP-CGI 參數注入工具）改寫自 [Night-have-dreams/php-cgi-Injector](https://github.com/Night-have-dreams/php-cgi-Injector)，原作者 Night-have-dreams，MIT License。
+- `fofa-mcp/` 源自 [lulaide/fofa-mcp](https://github.com/lulaide/fofa-mcp)，MIT License。
+
 
 
